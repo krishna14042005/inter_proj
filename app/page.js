@@ -2,7 +2,7 @@
 import styles from "./page.module.css";
 import {signIn, useSession, signOut} from "next-auth/react"
 import './globals.css'
-import Navbar from "@/component/Navbar";
+import Navbar from "@/app/component/Navbar";
 
 export default function Home() {
   const{data:session}=useSession();
