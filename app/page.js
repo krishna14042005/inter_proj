@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <div className={styles.page}>
       <Navbar/>
-      <p>You are not signed in.</p>
+      <p>You are signed in.</p>
        <button onClick={()=>signIn()}>Sign In</button>
     </div>
   );
