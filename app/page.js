@@ -2,6 +2,7 @@
 import styles from "./page.module.css";
 import {signIn, useSession, signOut} from "next-auth/react"
 import './globals.css'
+import Navbar from "@/component/Navbar";
 
 export default function Home() {
   const{data:session}=useSession();
@@ -9,7 +10,7 @@ export default function Home() {
   if(session){
    return(
     <>
-    <p>You are not signed in as a user{session.user.email}</p>
+    <p>You are signed in as a user{session.user.email}</p>
    
     <button onClick={()=>signOut()}>Sign Out</button>
     </>
